@@ -34,7 +34,7 @@ def testcard(cmap, seed=42):
                       vmin=-0.2, vmax=0.2)
     axes[0,0].set_ylim(-0.5, 0.5)
 
-    X,Y = np.meshgrid(np.linspace(0,1,32), np.linspace(0,1,32))
+    X,Y = np.meshgrid(np.linspace(0,1,256), np.linspace(0,1,256))
     C = X
     axes[0,1].pcolormesh(X, Y, C, cmap=cmap)
 
